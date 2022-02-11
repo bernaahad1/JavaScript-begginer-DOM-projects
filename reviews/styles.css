@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(241, 245, 248);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  display: block;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+.content {
+  background-color: rgb(255, 255, 255);
+  width: 80vh;
+  display: grid;
+  place-items: center;
+  padding: 2% 3%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px grey;
+}
+.titel {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.underline {
+  padding: 0.2em;
+  width: 5rem;
+  align-self: center;
+  background-color: rgb(73, 166, 233);
+}
+
+#person-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgb(73, 166, 233);
+  top: -0.25rem;
+  right: -0.5rem;
+}
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgb(73, 166, 233);
+  color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+
+h4 {
+  color: rgb(16, 42, 66);
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+#job {
+  color: rgb(149, 213, 255);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+#info {
+  color: rgb(107, 127, 152);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  color: rgb(73, 166, 233);
+  padding: 5px;
+}
+.surprise:hover {
+  background-color: rgb(73, 166, 233);
+  color: rgb(16, 42, 66);
+  transition: all 0.3s linear;
+}
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  font-size: x-large;
+  margin: 6px;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: rgb(53, 135, 194);
+  transition: all 0.3s linear;
+}
+.surprise {
+  background-color: rgb(224, 242, 253);
+  border-color: rgb(73, 166, 233);
+  border-radius: 6px;
+  font-size: small;
+}
