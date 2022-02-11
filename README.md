@@ -1,2 +1,2 @@
-# JavaScript-starting-code
-Different tasks and codes I write to learn JS 
+# JavaScript-small-projects
+Contains different small JavaScript projects.
