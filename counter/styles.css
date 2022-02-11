@@ -43,3 +43,9 @@ h1 {
   box-shadow: 0 0 2px;
   font-size: small;
 }
+
+.btn:hover {
+  background-color: rgb(16, 42, 66);
+  color: rgb(241, 245, 248);
+  transition: all 0.3s linear;
+}
