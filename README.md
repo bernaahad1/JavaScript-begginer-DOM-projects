@@ -1,2 +1,2 @@
-# JavaScript-small-projects
-Contains different small JavaScript projects.
+# JavaScript-begginer-DOM-projects
+Contains different begginer JavaScript projects.
