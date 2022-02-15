@@ -1,0 +1,111 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Opne Sans", sans-serif;
+  line-height: 1.5;
+  background-color: rgb(241, 245, 248);
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item-content {
+    width: 500px;
+    margin: 10px;
+  }
+}
+
+main {
+  padding-top: 100px;
+  margin: 0, auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.title {
+  margin-bottom: 30px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.line {
+  background-color: rgb(197, 157, 95);
+  padding: 2px;
+  width: 80px;
+}
+h1 {
+  letter-spacing: 2px;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  padding: 4px 15px;
+  margin: 10px;
+  border-radius: 8px;
+  color: rgb(197, 157, 95);
+  border: 2px solid rgb(197, 157, 95);
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px 0px;
+}
+
+img {
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  border: 5px solid rgb(197, 157, 95);
+  background-color: rgb(197, 157, 95);
+}
+.item-name {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px dotted lightslategray;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+.price {
+  color: rgb(197, 157, 95);
+}
+.item-decription {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  text-align: left;
+  color: lightslategray;
+}
+
+button:hover {
+  background-color: rgb(197, 157, 95);
+  transition: all 0.3s linear;
+  color: white;
+}
