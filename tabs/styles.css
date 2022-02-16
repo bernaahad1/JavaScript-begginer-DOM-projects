@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background-color: rgb(241, 245, 248);
+  color: rgb(16, 42, 66);
+}
+@media screen and (max-width: 992px) {
+  .img {
+    width: 100%;
+  }
+  .text-container {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 15px;
+    height: 300px;
+  }
+  .about-center {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+  }
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .img {
+    width: 46%;
+  }
+  .text-container {
+    width: 46%;
+    font-size: 15px;
+  }
+  .about-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    justify-items: center;
+  }
+  .section-center {
+    width: 98vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    margin-top: 30px;
+  }
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+article {
+  width: 100%;
+  height: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.title h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+}
+.title p {
+  font-size: 16px;
+  color: lightslategray;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.info-content {
+  width: 100%;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 35px 20px;
+  min-height: 309px;
+}
+
+.btn-content {
+  background-color: rgb(218, 226, 236);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 20px;
+  flex-grow: 1;
+  font-size: 18px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(235, 247, 255);
+  color: rgb(119, 160, 187);
+  transition: all 0.3s linear;
+}
+button.active:hover {
+  background-color: white;
+  color: rgb(16, 42, 66);
+}
+button.active {
+  background-color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.info-content h4 {
+  font-size: 19px;
+  letter-spacing: 3px;
+  padding-bottom: 8px;
+}
+.content {
+  display: none;
+}
+.content p {
+  color: lightslategray;
+}
+.content.active {
+  display: block;
+}
