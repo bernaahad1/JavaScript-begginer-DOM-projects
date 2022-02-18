@@ -14,17 +14,18 @@ I just told you! You've killed me! Fry! Quit doing the right thing, you jerk! Mi
 const input = document.querySelector("input");
 const btn = document.querySelector("button");
 const textCont = document.querySelector(".text");
+const form = document.querySelector(".lorem-form");
 
-btn.addEventListener("click", function () {
-  let value = input.value;
-  if (value < 0) {
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let value = parseInt(input.value);
+  if (value < 0 || isNaN(value) || value > text.length) {
     value = 1;
   }
   textCont.innerHTML = "";
   while (value > 0) {
     const rand = Math.floor(Math.random() * text.length);
     textCont.innerHTML += "<p>" + text[rand] + "</p>";
-    console.log(textCont.innerHTML);
     value--;
   }
 });
