@@ -17,6 +17,7 @@ body {
   margin-bottom: 0px;
   position: relative;
   max-width: 80rem;
+  overflow: hidden;
 }
 
 .slide {
@@ -26,6 +27,7 @@ body {
   background-color: rgb(205, 229, 242);
   border: 0.3em solid rgb(73, 166, 233);
   border-radius: 5px;
+  transition: all 0.25s ease-in-out;
 }
 img {
   width: 100%;
@@ -33,19 +35,6 @@ img {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.person-img {
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  margin: 0 auto;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
 }
 h1 {
   top: 50%;
@@ -56,16 +45,7 @@ h1 {
   font-size: 5rem;
   color: white;
 }
-h4 {
-  top: 35%;
-  left: 50%;
-  text-transform: capitalize;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  text-align: center;
-  font-size: 1.5rem;
-  color: white;
-}
+
 .btn-container {
   display: flex;
   flex-direction: row;
@@ -87,20 +67,3 @@ button:hover {
   color: rgb(16, 42, 66);
   transition: all 0.3s linear;
 }
-
-/* .slide:nth-child(1){
-  left: 0;
-}
-.slide:nth-child(2){
-  left: 100%;
-}
-.slide:nth-child(3){
-  left: 200%;
-}
-.slide:nth-child(4){
-  left: 300%;
-}
-.slide{
-  transform: translateX(-100%);
-} */
-/* negative value moves to left */
