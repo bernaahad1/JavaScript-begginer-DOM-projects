@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(241, 245, 248);
+  font-family: Helvetica, sans-serif;
+}
+.slider-container {
+  width: 80vw;
+  height: 50vh;
+  margin: 80px auto;
+  max-width: 1170px;
+  margin-bottom: 0px;
+  position: relative;
+  max-width: 80rem;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(205, 229, 242);
+  border: 0.3em solid rgb(73, 166, 233);
+  border-radius: 5px;
+}
+img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.person-img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+h1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+}
+h4 {
+  top: 35%;
+  left: 50%;
+  text-transform: capitalize;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: stretch;
+  justify-content: center;
+}
+button {
+  text-transform: capitalize;
+  font-size: 32px;
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  color: rgb(136, 169, 187);
+  cursor: pointer;
+}
+button:hover {
+  color: rgb(16, 42, 66);
+  transition: all 0.3s linear;
+}
+
+/* .slide:nth-child(1){
+  left: 0;
+}
+.slide:nth-child(2){
+  left: 100%;
+}
+.slide:nth-child(3){
+  left: 200%;
+}
+.slide:nth-child(4){
+  left: 300%;
+}
+.slide{
+  transform: translateX(-100%);
+} */
+/* negative value moves to left */
