@@ -45,6 +45,7 @@ input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   font-size: 17px;
+  text-transform: lowercase;
 }
 .submit {
   border: none;
@@ -90,6 +91,7 @@ button {
 }
 .item p {
   font-size: 16px;
+  text-transform: capitalize;
 }
 .btn-container button {
   background-color: transparent;
