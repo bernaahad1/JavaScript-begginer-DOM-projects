@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  background-image: url("./hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  padding: 10px 0;
+  width: 90vw;
+  max-width: 1170px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+li {
+  padding: 0 2rem;
+}
+button {
+  cursor: pointer;
+}
+li button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1em;
+  color: white;
+  letter-spacing: 2px;
+}
+.start-now,
+.sign-in {
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.1em;
+}
+main {
+  padding: 10px;
+  width: 90vw;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone-img {
+  width: 40%;
+  padding: 20px 40px;
+  margin: 0 20px;
+}
+.phone-img img {
+  width: 100%;
+}
+h1 {
+  font-size: 4rem;
+  text-align: left;
+  width: 70%;
+  font-weight: 900;
+}
+.info p {
+  margin: 10px 0;
+  color: lightslategray;
+  line-height: 2rem;
+}
+.start-now {
+  margin-top: 20px;
+}
