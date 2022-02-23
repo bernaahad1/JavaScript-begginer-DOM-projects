@@ -22,6 +22,10 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+/* @media screen and (min-width: 800px)
+{
+
+} */
 header {
   padding: 10px 0;
   width: 90vw;
@@ -46,6 +50,7 @@ ul {
 }
 li {
   padding: 0 2rem;
+  position: relative;
 }
 button {
   cursor: pointer;
@@ -56,6 +61,66 @@ li button {
   font-size: 1.1em;
   color: white;
   letter-spacing: 2px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
+.products {
+  position: absolute;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 600px;
+  font-size: 1.3em;
+  box-shadow: 0 0 6px 0px grey;
+  top: 145%;
+  left: -120%;
+}
+.developers {
+  position: absolute;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 550px;
+  font-size: 1.3em;
+  box-shadow: 0 0 6px 0px grey;
+  top: 145%;
+  left: -90%;
+}
+.company {
+  position: absolute;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 400px;
+  font-size: 1.3em;
+  box-shadow: 0 0 6px 0px grey;
+  top: 145%;
+  left: -55%;
+}
+h5 {
+  padding-left: 10px;
+  letter-spacing: 1.5px;
+}
+.dropdown-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.dropdown-btn {
+  cursor: pointer;
+  color: grey;
+  background-color: transparent;
+  border: none;
+  font-size: 0.8em;
+  margin-right: 50px;
 }
 .start-now,
 .sign-in {
