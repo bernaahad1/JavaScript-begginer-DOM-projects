@@ -53,6 +53,17 @@ body {
   .start-now {
     margin-top: 20px;
   }
+  main {
+    padding: 10px;
+    width: 90vw;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20vw;
+  }
 }
 @media screen and (max-width: 799px) {
   ul,
@@ -84,6 +95,17 @@ body {
     font-size: 1.2em;
     padding: 5px 10px;
     border-radius: 10px;
+  }
+  main {
+    padding: 10px;
+    width: 90vw;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50vw;
   }
 }
 header {
@@ -185,17 +207,7 @@ h5 {
   transition: all 0.4s linear;
   background-color: rgb(80, 82, 104);
 }
-main {
-  padding: 10px;
-  width: 90vw;
-  max-width: 1170px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20vw;
-}
+
 .phone-img {
   width: 35%;
   padding: 20px 40px;
